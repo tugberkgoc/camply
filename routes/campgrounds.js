@@ -2,6 +2,7 @@ var express = require("express");
 var router  = express.Router();
 var Campground = require("../models/campground");
 var middleware = require("../middleware");
+const user = require("../models/user")
 
 
 //INDEX - show all campgrounds
