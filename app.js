@@ -29,8 +29,6 @@ app.use(flash());
 //seed the database
 //seedDB(); 
 
-
-
 //PASSPORT CONFIG
 app.use(require("express-session")({
     secret: "Once again rusty is the cutest dog",
