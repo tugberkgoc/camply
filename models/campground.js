@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+var mongoose = require("mongoose")
 
 var campgroundSchema = new mongoose.Schema({
   name: String,
@@ -18,6 +18,6 @@ var campgroundSchema = new mongoose.Schema({
       ref: "Comment"
     }
   ]
-});
+})
 
-module.exports = mongoose.model("Campground", campgroundSchema);
+module.exports = mongoose.model("Campground", campgroundSchema)
