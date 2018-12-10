@@ -13,6 +13,11 @@ If you want to participate and contribute, clone the repository.
 git clone https://github.com/tugberkgoc/camply.git
 ```
 
+### Agile Scrum
+
+If you want to participate, you can take user story from our backlog. [Click here!](https://trello.com/b/XNGXBxr1/camply)
+
+
 * [NodeJS](https://nodejs.org/en/about/) - Back End Development Enviroment
 * [MongoDB](https://www.mongodb.com/) - Used to generate Relational Database
 
