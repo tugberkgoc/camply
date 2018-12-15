@@ -12,11 +12,16 @@
 
 .delete-form{
     display: inline;
+  
 }
 
 .jumbotron{
     background: url("https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") center center / cover no-repeat;
    
+}
+
+.campcontainer:hover{
+    transform: scale(1.1);
 }
 
 .vid-container{

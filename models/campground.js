@@ -1,6 +1,22 @@
-var mongoose = require("mongoose")
+/**
+ * Campground is model that designed for containing data.
+ *
+ * @type {*|Mongoose}
+ */
+const mongoose = require("mongoose")
 
-var campgroundSchema = new mongoose.Schema({
+/**
+ * Campground Schema
+ *
+ * <b>Entities:</b>
+ * name(String)
+ * price(String)
+ * image(String)
+ * description(String)
+ * author(id(ref="user"), username(String))
+ * comments(ref="Comment")
+ */
+const campgroundSchema = new mongoose.Schema({
   name: String,
   price: String,
   image: String,
@@ -20,4 +36,9 @@ var campgroundSchema = new mongoose.Schema({
   ]
 })
 
+/**
+ * @type {Model}
+ *
+ * @exports campgroundSchema
+ */
 module.exports = mongoose.model("Campground", campgroundSchema)
