@@ -13,6 +13,10 @@ If you want to participate and contribute, clone the repository.
 git clone https://github.com/tugberkgoc/camply.git
 ```
 
+### DATABASE
+
+!()[https://www.lucidchart.com/publicSegments/view/cbd9356a-c261-43d8-b4e4-72bd199c66f8/image.png]
+
 ### Agile Scrum
 
 If you want to participate, you can take user story from our backlog. [Click here!](https://trello.com/b/XNGXBxr1/camply)
