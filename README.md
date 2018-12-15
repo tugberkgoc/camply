@@ -68,7 +68,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Hanifi Enes Gul** - *Testing* - [GitHub Profile](https://github.com/r0sky)
 * **Tugberk GOC** - *Testing* - [GitHub Profile](https://github.com/tugberkgoc)
 * **Atakan Kaya** - *Documentation* - [Github Profile](https://github.com/Atakankaya1905)
+<<<<<<< HEAD
+* **Arda Gurhan Cakmakli** - *Documentation* - [Github Profile](https://github.com/ardacakmakli)
+=======
 * **Arda Gurhan Cakmakli** - *Documentation* - [Github Profile]()
+>>>>>>> 22053eb6aad66db03e20bc895d921396b492881c
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
