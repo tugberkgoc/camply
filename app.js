@@ -1,31 +1,25 @@
 const express = require("express"),
- app = express(),
- bodyParser = require("body-parser"),
- mongoose = require("mongoose"),
- flash = require("connect-flash"),
- passport = require("passport"),
- LocalStrategy = require("passport-local"),
- methodOverride = require("method-override"),
- User = require("./models/user"),
- commentRoutes = require("./routes/comments"),
- campgroundRoutes = require("./routes/campgrounds"),
- indexRoutes = require("./routes/index")
+  app = express(),
+  bodyParser = require("body-parser"),
+  mongoose = require("mongoose"),
+  flash = require("connect-flash"),
+  passport = require("passport"),
+  LocalStrategy = require("passport-local"),
+  methodOverride = require("method-override"),
+  User = require("./models/user"),
+  commentRoutes = require("./routes/comments"),
+  campgroundRoutes = require("./routes/campgrounds"),
+  indexRoutes = require("./routes/index")
 
 require('dotenv').config()
 
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
+mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs")
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
-
-/**
- * For seed DB, use below.
- */
-//seedDB();
-
 
 /**
  * PASSPORT CONFIG
