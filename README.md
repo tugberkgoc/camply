@@ -31,12 +31,18 @@ node app.js
 ```
 npm install -g mocha
 ```
-
 * Second
 
 ```
 mocha
 ```
+
+### Documentation
+
+If you want to see documentation. Please, follow these steps.
+
+* In camply files, open out/ directory
+* Then, click index.html
 
 ### Database Schemes
 
@@ -64,15 +70,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Volkan Arisli** - *Initial work* - [GitHub Profile](https://github.com/volkanarisli)
-* **Hanifi Enes Gul** - *Testing* - [GitHub Profile](https://github.com/r0sky)
+* **Volkan Arisli** - *Coding* - [GitHub Profile](https://github.com/volkanarisli)
+* **Hanifi Enes Gul** - *Coding and Testing* - [GitHub Profile](https://github.com/r0sky)
 * **Tugberk GOC** - *Testing* - [GitHub Profile](https://github.com/tugberkgoc)
 * **Atakan Kaya** - *Documentation* - [Github Profile](https://github.com/Atakankaya1905)
-<<<<<<< HEAD
-* **Arda Gurhan Cakmakli** - *Documentation* - [Github Profile](https://github.com/ardacakmakli)
-=======
 * **Arda Gurhan Cakmakli** - *Documentation* - [Github Profile]()
->>>>>>> 22053eb6aad66db03e20bc895d921396b492881c
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
