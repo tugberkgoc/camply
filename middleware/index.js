@@ -1,45 +1,9 @@
-/**
- * Index is a middleware to validate requests and responses.
- *
- * @class middleware-index.js
- * @type {*|NodeJS}
- */
-
-/**
- * Importing Campground Model
- *
- * @property Campground
- * @type {require}
- * @default "../models/campground"
- */
 const Campground = require("../models/campground")
 
-/**
- * Importing Comment Model
- *
- * @property Campground
- * @type {require}
- * @default "../models/comment"
- */
 const Comment = require("../models/comment")
 
-/**
- * It stores middleware objects.
- *
- * @property middlewareObj
- * @type {Object}
- * @default ""
- */
 const middlewareObj = {}
 
-/**
- * Checks campground ownership
- *
- * @method checkCampgroundOwnership
- * @param {Object} req
- * @param {Object} res
- * @param {Object} next
- */
 middlewareObj.checkCampgroundOwnership = function (req, res, next) {
   if (req.isAuthenticated()) {
     Campground.findById(req.params.id, function (err, foundCampground) {
@@ -61,14 +25,6 @@ middlewareObj.checkCampgroundOwnership = function (req, res, next) {
   }
 }
 
-/**
- * Checks comment ownership
- *
- * @method checkCampgroundOwnership
- * @param {Object} req
- * @param {Object} res
- * @param {Object} next
- */
 middlewareObj.checkCommentOwnership = function (req, res, next) {
   if (req.isAuthenticated()) {
     Comment.findById(req.params.comment_id, function (err, foundComment) {
@@ -89,14 +45,6 @@ middlewareObj.checkCommentOwnership = function (req, res, next) {
   }
 }
 
-/**
- * Checks the user is logged in
- *
- * @method checkCampgroundOwnership
- * @param {Object} req
- * @param {Object} res
- * @param {Object} next
- */
 middlewareObj.isLoggedIn = function (req, res, next) {
   if (req.isAuthenticated()) {
     return next()
@@ -105,7 +53,4 @@ middlewareObj.isLoggedIn = function (req, res, next) {
   res.redirect("/login")
 }
 
-/**
- * @exports middlewareObj
- */
 module.exports = middlewareObj

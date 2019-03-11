@@ -13,7 +13,7 @@ const express = require("express"),
 
 require('dotenv').config()
 
-mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true });
+mongoose.connect("mongodb://tugberkgoc:Tanil55+@ds163835.mlab.com:63835/camply",{ useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 
